@@ -57,11 +57,6 @@
       outline-offset: 3px;
     }
 
-    body > :not(.ambient-icons) {
-      position: relative;
-      z-index: 1;
-    }
-
     .ambient-icons {
       position: fixed;
       inset: 0;
@@ -70,6 +65,11 @@
       z-index: 0;
       perspective: 1200px;
       --ambient-speed: 1;
+    }
+
+    .site-content {
+      position: relative;
+      z-index: 1;
     }
 
     .ambient-icon {
@@ -1298,6 +1298,7 @@
 </head>
 <body>
   <div class="ambient-icons" id="ambientIcons" aria-hidden="true"></div>
+  <div class="site-content">
 
   <!-- Header -->
   <header>
@@ -1503,6 +1504,7 @@
       &copy; 2024 Ginails &mdash; Abidjan, Côte d'Ivoire
     </div>
   </footer>
+  </div>
 
   <script>
     /* ── Service Data ── */
